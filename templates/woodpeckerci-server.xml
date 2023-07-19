@@ -10,8 +10,8 @@
   <Project>https://github.com/woodpecker-ci/woodpecker</Project>
   <Overview>Woodpecker is a simple CI engine with great extensibility. It runs your pipelines inside Docker containers, so if you are already using them in your daily workflow, you'll love Woodpecker for sure. [/b] AppSupport: https://discord.gg/ATCM64M</Overview>
   <WebUI>http://[IP]:[PORT:8000]</WebUI>
-  <TemplateURL>https://raw.githubusercontent.com/selfhosters/unRAID-CA-templates/master/templates/woodpeckerci-server.xml</TemplateURL>
-  <Icon>https://raw.githubusercontent.com/selfhosters/unRAID-CA-templates/master/templates/img/woodpeckerci.png</Icon>
+  <TemplateURL>https://raw.githubusercontent.com/xBerzerkr/unraid-templates/master/templates/woodpeckerci-server.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/xBerzerkr/unraid-templates/master/templates/img/woodpeckerci.png</Icon>
   <Config Name="WOODPECKER_HOST" Target="WOODPECKER_HOST" Default="woodpecker.example.com" Mode="" Description="Container Variable: WOODPECKER_HOST" Type="Variable" Display="always" Required="true" Mask="false"/>
   <Config Name="Web UI" Target="8000" Default="8000" Mode="tcp" Description="Web UI Port: 8000" Type="Port" Display="always" Required="false" Mask="false">8000</Config>
   <Config Name="WOODPECKER_GITHUB" Target="WOODPECKER_GITHUB" Default="true" Mode="" Description="Container Variable: WOODPECKER_GITHUB" Type="Variable" Display="always" Required="true" Mask="false">true</Config>
