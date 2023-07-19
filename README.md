@@ -2,7 +2,7 @@
 
 <h3>Description</h3>
 
-UNRAID Docker Templates for Docker images in the "binhex" repository.
+UNRAID Docker Templates for Docker images in the "xBerzerkr" repository.
 
 <h3>Usage in UNRAID:</h3>
 <ol>
