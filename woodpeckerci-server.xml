@@ -13,12 +13,23 @@
   <TemplateURL>https://raw.githubusercontent.com/selfhosters/unRAID-CA-templates/master/templates/woodpeckerci-server.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/selfhosters/unRAID-CA-templates/master/templates/img/woodpeckerci.png</Icon>
   <ExtraParams>--restart=unless-stopped</ExtraParams>
-  <Config Name="WebUI" Target="8000" Default="8000" Mode="tcp" Description="Container Port: 8000" Type="Port" Display="always" Required="true" Mask="false"/>
-  <Config Name="Config" Target="/root/config/" Default="/mnt/user/appdata/woodpeckerci-server" Mode="rw" Description="Container Path: /root/config/" Type="Path" Display="advanced" Required="false" Mask="false"/>
-  <Config Name="WOODPECKER_OPEN" Target"true" Default="true" 
-  <Config Name="WOODPECKER_HOST" Description="Woodpecker Server Host" WOODPECKER_HOST=${WOODPECKER_HOST}
-  <Config Name="WOODPECKER_GITHUB" Description="Enable Woodpecker Github" WOODPECKER_GITHUB=true
-  <Config Name="WOODPECKER_GITHUB" Description="Enable Woodpecker Github" WOODPECKER_GITHUB_CLIENT=${WOODPECKER_GITHUB_CLIENT}
-  <Config Name="WOODPECKER_GITHUB" Description="Enable Woodpecker Github" - WOODPECKER_GITHUB_SECRET=${WOODPECKER_GITHUB_SECRET}
-  <Config Name="WOODPECKER_GITHUB" Description="Enable Woodpecker Github"- - WOODPECKER_AGENT_SECRET=${WOODPECKER_AGENT_SECRET}      
 </Container>
+
+
+# docker-compose.yml
+version: '3'
+
+services:
+  woodpecker-server:
+    image: woodpeckerci/woodpecker-server:latest
+    ports:
+      - 8000:8000
+    volumes:
+      - woodpecker-server-data:/var/lib/woodpecker/
+    environment:
+      - WOODPECKER_OPEN=true
+      - WOODPECKER_HOST=${WOODPECKER_HOST}
+      - WOODPECKER_GITHUB=true
+      - WOODPECKER_GITHUB_CLIENT=${WOODPECKER_GITHUB_CLIENT}
+      - WOODPECKER_GITHUB_SECRET=${WOODPECKER_GITHUB_SECRET}
+      - WOODPECKER_AGENT_SECRET=${WOODPECKER_AGENT_SECRET}
