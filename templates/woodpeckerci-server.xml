@@ -12,24 +12,11 @@
   <WebUI>http://[IP]:[PORT:8000]</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/selfhosters/unRAID-CA-templates/master/templates/woodpeckerci-server.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/selfhosters/unRAID-CA-templates/master/templates/img/woodpeckerci.png</Icon>
+  <Config Name="WOODPECKER_HOST" Target="WOODPECKER_HOST" Default="woodpecker.example.com" Mode="" Description="Container Variable: WOODPECKER_HOST" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="Web UI" Target="8000" Default="8000" Mode="tcp" Description="Web UI Port: 8000" Type="Port" Display="always" Required="false" Mask="false">8000</Config>
+  <Config Name="WOODPECKER_GITHUB" Target="WOODPECKER_GITHUB" Default="true" Mode="" Description="Container Variable: WOODPECKER_GITHUB" Type="Variable" Display="always" Required="true" Mask="false">true</Config>
+  <Config Name="WOODPECKER_GITHUB_CLIENT" Target="WOODPECKER_GITHUB_CLIENT" Default="" Mode="" Description="Container Variable: WOODPECKER_GITHUB_CLIENT" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="WOODPECKER_GITHUB_SECRET" Target="WOODPECKER_GITHUB_SECRET" Default="" Mode="" Description="Container Variable: WOODPECKER_GITHUB_SECRET" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="WOODPECKER_AGENT_SECRET" Target="WOODPECKER_AGENT_SECRET" Default="" Mode="" Description="Container Variable: WOODPECKER_AGENT_SECRET" Type="Variable" Display="always" Required="false" Mask="false"></Config>
   <ExtraParams>--restart=unless-stopped</ExtraParams>
 </Container>
-
-
-# docker-compose.yml
-version: '3'
-
-services:
-  woodpecker-server:
-    image: woodpeckerci/woodpecker-server:latest
-    ports:
-      - 8000:8000
-    volumes:
-      - woodpecker-server-data:/var/lib/woodpecker/
-    environment:
-      - WOODPECKER_OPEN=true
-      - WOODPECKER_HOST=${WOODPECKER_HOST}
-      - WOODPECKER_GITHUB=true
-      - WOODPECKER_GITHUB_CLIENT=${WOODPECKER_GITHUB_CLIENT}
-      - WOODPECKER_GITHUB_SECRET=${WOODPECKER_GITHUB_SECRET}
-      - WOODPECKER_AGENT_SECRET=${WOODPECKER_AGENT_SECRET}
