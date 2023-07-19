@@ -6,7 +6,7 @@
   <Category>Tools:Utilities</Category>
   <Privileged>false</Privileged>
   <Network>bridge</Network>
-  <Support>https://forums.unraid.net/topic/87798-support-selfhostersnets-template-repository/</Support>
+  <Support>https://forums.unraid.net/topic/$example-forum-name/</Support>
   <Project>https://github.com/woodpecker-ci/woodpecker</Project>
   <Overview>Woodpecker is a simple CI engine with great extensibility. It runs your pipelines inside Docker containers, so if you are already using them in your daily workflow, you'll love Woodpecker for sure. [/b] AppSupport: https://discord.gg/ATCM64M</Overview>
   <WebUI>http://[IP]:[PORT:8000]</WebUI>
