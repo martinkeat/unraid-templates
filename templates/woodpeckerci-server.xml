@@ -12,12 +12,12 @@
   <WebUI>http://[IP]:[PORT:8000]</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/xBerzerkr/unraid-templates/master/templates/woodpeckerci-server.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/xBerzerkr/unraid-templates/master/templates/img/woodpeckerci.png</Icon>
-  <Config Name="WOODPECKER_HOST" Target="WOODPECKER_HOST" Default="woodpecker.example.com" Mode="" Description="Container Variable: WOODPECKER_HOST" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="Host" Target="WOODPECKER_HOST" Default="woodpecker.example.com" Mode="" Description="Container Variable: WOODPECKER_HOST" Type="Variable" Display="always" Required="true" Mask="false"/>
   <Config Name="Web UI" Target="8000" Default="8000" Mode="tcp" Description="Web UI Port: 8000" Type="Port" Display="always" Required="false" Mask="false">8000</Config>
-  <Config Name="WOODPECKER_GITHUB" Target="WOODPECKER_GITHUB" Default="true" Mode="" Description="Container Variable: WOODPECKER_GITHUB" Type="Variable" Display="always" Required="true" Mask="false">true</Config>
-  <Config Name="WOODPECKER_GITHUB_CLIENT" Target="WOODPECKER_GITHUB_CLIENT" Default="" Mode="" Description="Container Variable: WOODPECKER_GITHUB_CLIENT" Type="Variable" Display="always" Required="false" Mask="false"></Config>
-  <Config Name="WOODPECKER_GITHUB_SECRET" Target="WOODPECKER_GITHUB_SECRET" Default="" Mode="" Description="Container Variable: WOODPECKER_GITHUB_SECRET" Type="Variable" Display="always" Required="false" Mask="false"></Config>
-  <Config Name="WOODPECKER_AGENT_SECRET" Target="WOODPECKER_AGENT_SECRET" Default="" Mode="" Description="Container Variable: WOODPECKER_AGENT_SECRET" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="Enable Woodpecker GitHub" Target="WOODPECKER_GITHUB" Default="true" Mode="" Description="Container Variable: WOODPECKER_GITHUB" Type="Variable" Display="always" Required="true" Mask="false">true</Config>
+  <Config Name="Woodpecker GitHub Client ID" Target="WOODPECKER_GITHUB_CLIENT" Default="" Mode="" Description="Container Variable: WOODPECKER_GITHUB_CLIENT" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="Woodpecker GitHub Secret" Target="WOODPECKER_GITHUB_SECRET" Default="" Mode="" Description="Container Variable: WOODPECKER_GITHUB_SECRET" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="Woodpecker Agent Shared Secret" Target="WOODPECKER_AGENT_SECRET" Default="" Mode="" Description="Container Variable: WOODPECKER_AGENT_SECRET" Type="Variable" Display="always" Required="false" Mask="false"></Config>
   <Config Name="Data directory" Target="/data" Default="/mnt/user/appdata/woodpeckerci-server" Mode="rw" Description="Container Path: /data" Type="Path" Display="always" Required="true" Mask="false"/>
   <ExtraParams>--restart=unless-stopped</ExtraParams>
 </Container>
