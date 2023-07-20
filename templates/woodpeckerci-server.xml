@@ -3,41 +3,21 @@
   <Name>woodpeckerci-server</Name>
   <Repository>woodpeckerci/woodpecker-server:latest</Repository>
   <Registry>https://hub.docker.com/r/woodpeckerci/woodpecker-server/</Registry>
-  <Project>https://github.com/woodpecker-ci/woodpecker</Project>
-  <Network>bridge</Network>
-  <Privileged>false</Privileged>
-  <Date>2023-07-19</Date>
-  <Support>https://github.com/xBerzerkr/unraid-templates/issues/new/choose</Support>
-  <Overview>Woodpecker is a simple CI engine with great extensibility. It runs your pipelines inside Docker containers, so if you are already using them in your daily workflow, you'll love Woodpecker for sure.</Overview>  
   <Category>Productivity: Tools:</Category>
+  <Privileged>false</Privileged>
+  <Network>bridge</Network>
+  <Support>https://woodpecker-ci.org/docs/intro</Support>
+  <Project>https://github.com/woodpecker-ci/woodpecker</Project>
+  <Overview>Woodpecker is a simple CI engine with great extensibility. It runs your pipelines inside Docker containers, so if you are already using them in your daily workflow, you'll love Woodpecker for sure. [/b] AppSupport: https://discord.gg/ATCM64M</Overview>
   <WebUI>http://[IP]:[PORT:8000]</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/xBerzerkr/unraid-templates/master/templates/woodpeckerci-server.xml</TemplateURL>
-  <Icon>https://raw.githubusercontent.com/xBerzerkr/unraid-templates/master/templates/icons/woodpeckerci-server.png</Icon>
-  <ExtraParams>--restart=unless-stopped</ExtraParams>
-  <Description>Gitea: Git with a cup of tea - The goal of this project is to make the easiest, fastest, and most painless way of setting up a self-hosted Git service. Using Go, this can be done with an independent binary distribution across all platforms which Go supports, including Linux, macOS, and Windows on x86, amd64, ARM and PowerPC architectures. Want to try it before doing anything else? Do it with the online demo! This project has been forked from Gogs.</Description>
-  <Networking>
-    <Mode>bridge</Mode>
-    <Publish>
-      <Port>
-        <HostPort>8000</HostPort>
-        <ContainerPort>8000</ContainerPort>
-        <Protocol>tcp</Protocol>
-      </Port>
-    </Publish>
-  </Networking>
-  <Data>
-    <Volume>
-      <HostDir>/mnt/user/appdata/woodpeckerci-server</HostDir>
-      <ContainerDir>/data</ContainerDir>
-      <Mode>rw</Mode>
-    </Volume>
-  </Data>
-  <Environment/>
-  <Config Name="Host" Target="WOODPECKER_HOST" Default="woodpecker.example.com" Mode="" Description="Container Variable: WOODPECKER_HOST" Type="Variable" Display="always" Required="true" Mask="false"/></Config>
+  <Icon>https://raw.githubusercontent.com/xBerzerkr/unraid-templates/master/templates/img/woodpeckerci.png</Icon>
+  <Config Name="Host" Target="WOODPECKER_HOST" Default="woodpecker.example.com" Mode="" Description="Container Variable: WOODPECKER_HOST" Type="Variable" Display="always" Required="true" Mask="false"/>
   <Config Name="Web UI" Target="8000" Default="8000" Mode="tcp" Description="Web UI Port: 8000" Type="Port" Display="always" Required="false" Mask="false">8000</Config>
   <Config Name="Enable Woodpecker GitHub" Target="WOODPECKER_GITHUB" Default="true" Mode="" Description="Container Variable: WOODPECKER_GITHUB" Type="Variable" Display="always" Required="true" Mask="false">true</Config>
   <Config Name="Woodpecker GitHub Client ID" Target="WOODPECKER_GITHUB_CLIENT" Default="" Mode="" Description="Container Variable: WOODPECKER_GITHUB_CLIENT" Type="Variable" Display="always" Required="false" Mask="false"></Config>
   <Config Name="Woodpecker GitHub Secret" Target="WOODPECKER_GITHUB_SECRET" Default="" Mode="" Description="Container Variable: WOODPECKER_GITHUB_SECRET" Type="Variable" Display="always" Required="false" Mask="false"></Config>
   <Config Name="Woodpecker Agent Shared Secret" Target="WOODPECKER_AGENT_SECRET" Default="" Mode="" Description="Container Variable: WOODPECKER_AGENT_SECRET" Type="Variable" Display="always" Required="false" Mask="false"></Config>
-  <Config Name="Data directory" Target="/data" Default="/mnt/user/appdata/woodpeckerci-server" Mode="rw" Description="Container Path: /data" Type="Path" Display="advanced" Required="true" Mask="false"/></Config>
+  <Config Name="Data directory" Target="/data" Default="/mnt/user/appdata/woodpeckerci-server" Mode="rw" Description="Container Path: /data" Type="Path" Display="always" Required="true" Mask="false"/>
+  <ExtraParams>--restart=unless-stopped</ExtraParams>
 </Container>
