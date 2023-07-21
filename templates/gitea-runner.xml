@@ -13,7 +13,7 @@
   <Category>Productivity: Tools:</Category>
   <WebUI></WebUI>
   <TemplateURL>https://github.com/bravohotel91/unraid-templates/templates/gitea-runner.xml</TemplateURL>
-  <Icon>https://github.com/bravohotel91/unraid-templates/icons/gitea-runner.png</Icon>
+  <Icon>https://github.com/bravohotel91/unraid-templates/templates/icons/gitea-runner.png</Icon>
   <ExtraParams>--restart=unless-stopped</ExtraParams>
   <Config Name="Config File" Target="CONFIG_FILE" Default="/mnt/user/appdata/gitea-runner/config.yaml" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false"></Config>
   <Config Name="Gitea Runner Registration Token" Target="GITEA_RUNNER_REGISTRATION_TOKEN" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false"></Config>
