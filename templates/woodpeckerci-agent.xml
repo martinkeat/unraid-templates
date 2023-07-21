@@ -1,11 +1,24 @@
- woodpecker-agent:
-    image: woodpeckerci/woodpecker-agent:latest
-    command: agent
-    restart: always
-    depends_on:
-      - woodpecker-server
-    volumes:
-      - /var/run/docker.sock:/var/run/docker.sock
-    environment:
-      - WOODPECKER_SERVER=woodpecker-server:9000
-      - WOODPECKER_AGENT_SECRET=${WOODPECKER_AGENT_SECRET}
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>woodpecker-agent</Name>
+  <Repository>woodpeckerci/woodpecker-agent:latest</Repository>
+  <Registry>https://hub.docker.com/r/woodpeckerci/woodpecker-agent/</Registry>
+  <Network>bridge</Network>
+  <Privileged>false</Privileged>
+  <Support>https://woodpecker-ci.org/docs/intro</Support>
+  <Project>https://github.com/woodpecker-ci/woodpecker</Project>
+  <Overview>Woodpecker is a simple CI engine with great extensibility.&#xD;
+  &#xD;
+  It runs your pipelines inside Docker containers, so if you are already using them in your daily workflow, you'll love Woodpecker for sure.&#xD;
+  &#xD;
+  Modify per your requirements</Overview>
+  <Category>Productivity: Tools:</Category>
+  <WebUI>http://[IP]:[PORT:8000]</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/bravohotel91/unraid-templates/main/templates/woodpeckerci-server.xml</TemplateURL>
+  <Icon>https://github.com/bravohotel91/unraid-templates/blob/1cde6ee55ac9c6f31660759b3878bebeec932d05/templates/icons/woodpeckerci-server.png</Icon>
+  <ExtraParams>--restart=unless-stopped</ExtraParams>
+  <Config Name="Woodpecker Server" Target="WOODPECKER_SERVER" Default="woodpecker-server:9000" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="Woodpecker Agent Shared Secret" Target="WOODPECKER_AGENT_SECRET" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="/var/run/docker.sock" Target="/var/run/docker.sock" Default="/var/run/docker.sock" Mode="rw" Description="" Type="Path" Display="advanced" Required="true" Mask="false"></Config>
+</Container>
+
