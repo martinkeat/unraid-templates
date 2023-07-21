@@ -20,6 +20,6 @@
   <Config Name="Gitea Runner Name" Target="GITEA_RUNNER_NAME" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false"></Config>
   <Config Name="Gitea Runner Labels" Target="GITEA_RUNNER_LABELS" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false"></Config>
   <Config Name="Gitea Instance URL" Target="GITEA_INSTANCE_URL" Default="0.0.0.0" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false"></Config>
-  <Config Name="Data Storage Path" Target="/data" Default="/mnt/user/appdata/gitea/data" Mode="rw" Description="" Type="Path" Display="advanced" Required="true" Mask="false"></Config>
+  <Config Name="Data Storage Path" Target="/data" Default="/mnt/user/appdata/gitea-runner/data" Mode="rw" Description="" Type="Path" Display="advanced" Required="true" Mask="false"></Config>
   <Config Name="/var/run/docker.sock" Target="/var/run/docker.sock" Default="/var/run/docker.sock" Mode="" Description="" Type="Variable" Display="advanced" Required="true" Mask="false"></Config>
 </Container>
