@@ -3,17 +3,20 @@
   <Name>woodpeckerci-server</Name>
   <Repository>woodpeckerci/woodpecker-server:latest</Repository>
   <Registry>https://hub.docker.com/r/woodpeckerci/woodpecker-server/</Registry>
-  <Category>Productivity: Tools:</Category>
-  <Privileged>false</Privileged>
   <Network>bridge</Network>
-  <MyIP/>
-  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
   <Support>https://woodpecker-ci.org/docs/intro</Support>
   <Project>https://github.com/woodpecker-ci/woodpecker</Project>
-  <Overview>Woodpecker is a simple CI engine with great extensibility. It runs your pipelines inside Docker containers, so if you are already using them in your daily workflow, you'll love Woodpecker for sure. [/b] AppSupport: https://discord.gg/ATCM64M</Overview>
+  <Overview>Woodpecker is a simple CI engine with great extensibility.&#xD;
+  &#xD;
+  It runs your pipelines inside Docker containers, so if you are already using them in your daily workflow, you'll love Woodpecker for sure.&#xD;
+  &#xD;
+  Modify per your requirements</Overview>
+  <Category>Productivity: Tools:</Category>
   <WebUI>http://[IP]:[PORT:8000]</WebUI>
-  <TemplateURL>https://raw.githubusercontent.com/xBerzerkr/unraid-templates/master/templates/woodpeckerci-server.xml</TemplateURL>
-  <Icon>https://raw.githubusercontent.com/xBerzerkr/unraid-templates/master/templates/img/woodpeckerci.png</Icon>
+  <TemplateURL>https://raw.githubusercontent.com/Homelabbers/unraid-templates/master/templates/woodpeckerci-server.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/Homelabbers/unraid-templates/master/templates/img/woodpeckerci.png</Icon>
+  <ExtraParams>--restart=unless-stopped</ExtraParams>
   <Config Name="Host" Target="WOODPECKER_HOST" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false"/>
   <Config Name="Web UI" Target="8000" Default="8000" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false"></Config>
   <Config Name="Enable Woodpecker GitHub" Target="WOODPECKER_GITHUB" Default="true" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false"></Config>
@@ -22,10 +25,4 @@
   <Config Name="Woodpecker Agent Shared Secret" Target="WOODPECKER_AGENT_SECRET" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"></Config>
   <Config Name="Config Dir" Target="/config" Default="/mnt/user/appdata/woodpeckerci-server" Mode="rw" Description="" Type="Path" Display="advanced" Required="true" Mask="false"></Config>
   <Config Name="Data Dir" Target="/var/lib/woodpecker" Default="/mnt/user/appdata/woodpeckerci-server/data" Mode="rw" Description="" Type="Path" Display="advanced" Required="true" Mask="false"></Config>
-  <ExtraParams>--restart=unless-stopped</ExtraParams>
-  <PostArgs/>
-  <CPUset/>
-  <DateInstalled></DateInstalled>
-  <DonateText/>
-  <DonateLink/>
 </Container>
