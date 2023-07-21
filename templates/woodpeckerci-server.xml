@@ -14,8 +14,8 @@
   Modify per your requirements</Overview>
   <Category>Productivity: Tools:</Category>
   <WebUI>http://[IP]:[PORT:8000]</WebUI>
-  <TemplateURL>https://raw.githubusercontent.com/Homelabbers/unraid-templates/master/templates/woodpeckerci-server.xml</TemplateURL>
-  <Icon>https://raw.githubusercontent.com/Homelabbers/unraid-templates/master/templates/img/woodpeckerci.png</Icon>
+  <TemplateURL>https://raw.githubusercontent.com/bravohotel91/unraid-templates/main/templates/woodpeckerci-server.xml</TemplateURL>
+  <Icon>https://github.com/bravohotel91/unraid-templates/blob/1cde6ee55ac9c6f31660759b3878bebeec932d05/templates/icons/woodpeckerci-server.png</Icon>
   <ExtraParams>--restart=unless-stopped</ExtraParams>
   <Config Name="Host" Target="WOODPECKER_HOST" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false"/>
   <Config Name="Web UI" Target="8000" Default="8000" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false"></Config>
