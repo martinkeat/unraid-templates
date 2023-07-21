@@ -5,7 +5,7 @@
   <Registry>https://hub.docker.com/r/woodpeckerci/woodpecker-server/</Registry>
   <Network>bridge</Network>
   <Privileged>false</Privileged>
-  <Support>https://woodpecker-ci.org/docs/intro</Support>
+  <Support>https://github.com/bravohotel91/unraid-templates/issues/new/choose</Support>
   <Project>https://github.com/woodpecker-ci/woodpecker</Project>
   <Overview>Woodpecker is a simple CI engine with great extensibility.&#xD;
   &#xD;
