@@ -10,8 +10,8 @@
   <Overview>Ryot (Roll Your Own Tracker), pronounced "riot", aims to be the only self hosted tracker you will ever need!</Overview>
   <Category>Productivity: Tools:</Category>
   <WebUI>http://[IP]:[PORT:8000]</WebUI>
-  <TemplateURL>https://raw.githubusercontent.com/bravohotel91/unraid-templates/main/templates/woodpeckerci-server.xml</TemplateURL>
-  <Icon>https://raw.githubusercontent.com/bravohotel91/unraid-templates/main/templates/icons/woodpeckerci-server.png</Icon>
+  <TemplateURL>https://raw.githubusercontent.com/bravohotel91/unraid-templates/main/templates/ryot.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/bravohotel91/unraid-templates/main/templates/icons/ryot.png</Icon>
   <ExtraParams>--restart=unless-stopped</ExtraParams>
   <Requires>
     PostgreSQL 15
