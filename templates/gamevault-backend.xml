@@ -21,6 +21,7 @@
   <Config Name="Postgres DB User" Target="DB_USERNAME" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false"/>
   <Config Name="Postgres DB Password" Target="DB_PASSWORD" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="true"/>
   <Config Name="Server Admin Username" Target="SERVER_ADMIN_USERNAME" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="Server Admin Password" Target="SERVER_ADMIN_PASSWORD" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="true"/>
   <Config Name="Web UI" Target="8080" Default="8080" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false"></Config>
   <Config Name="Data Dir" Target="/data" Default="/mnt/user/appdata/gamevault-backend" Mode="rw" Description="" Type="Path" Display="advanced" Required="true" Mask="false"></Config>
   <Config Name="Files Dir" Target="/files" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false"></Config>
