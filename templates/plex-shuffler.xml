@@ -1,0 +1,24 @@
+---
+version: '3'
+
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Plex Shuffler</Name>
+  <Repository>douwjacobs/plex-shuffler</Repository>
+  <Registry>https://hub.docker.com/r/douwjacobs/plex-shuffler</Registry>
+  <Network>bridge</Network>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/bravohotel91/unraid-templates/issues/new/choose</Support>
+  <Overview>Plex Shuffler creates shuffled playlists which integrates with the Plex ecosystem.</Overview>
+  <Category>Productivity: Tools:</Category>
+  <WebUI>http://[IP]:[PORT:3210]</WebUI>
+  <TemplateURL>https://github.com/bravohotel91/unraid-templates/templates/plex-shuffler.xml</TemplateURL>
+  <Icon>https://github.com/bravohotel91/unraid-templates/templates/icons/plex-shuffler.png</Icon>
+  <ExtraParams/>
+  <Description>Plex Shuffler is a free and open source software application for creating shuffled playlists on Plex. It integrates with Plex and allows the user to shuffle different TV shows but keep a single TV show's episodes in order. The idea is to create a TV channel-like experience by shuffling your favorite TV shows.</Description>
+  <Config Name="Web UI Port" Target="3210" Default="3210" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="LOG LEVEL" Target="LOG_LEVEL" Default="debug" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="TZ" Target="TZ" Default="Asia/Tokyo" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"></Config>  
+  <Config Name="Web UI" Target="3210" Default="3210" Mode="tcp" Description="Container Port: 3000" Type="Port" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="Config Path" Target="/app/config" Default="/mnt/user/appdata/plex-shuffler/config" Mode="rw" Description="" Type="Path" Display="advanced" Required="true" Mask="false"></Config>
+</Container>
