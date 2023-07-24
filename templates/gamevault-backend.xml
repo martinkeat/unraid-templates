@@ -17,7 +17,7 @@
     PostgreSQL 15
     This container requires an external application to be run separately.
   </Requires>
-  <Config Name="Postgres Host" Target="DB_HOST" Default="true" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="Postgres Host" Target="DB_HOST" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false"/>
   <Config Name="Postgres DB User" Target="DB_USERNAME" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false"/>
   <Config Name="Postgres DB Password" Target="DB_PASSWORD" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false"/>
   <Config Name="Server Admin Username" Target="SERVER_ADMIN_USERNAME" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false"/>
