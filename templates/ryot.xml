@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Ryot</Name>
+  <Repository>ghcr.io/ignisda/ryot:latest</Repository>
+  <Registry>https://github.com/IgnisDa/ryot/pkgs/container/ryot</Registry>
+  <Network>bridge</Network>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/bravohotel91/unraid-templates/issues/new/choose</Support>
+  <Project>https://github.com/IgnisDa/ryot</Project>
+  <Overview>Ryot (Roll Your Own Tracker), pronounced "riot", aims to be the only self hosted tracker you will ever need!</Overview>
+  <Category>Productivity: Tools:</Category>
+  <WebUI>http://[IP]:[PORT:8000]</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/bravohotel91/unraid-templates/main/templates/woodpeckerci-server.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/bravohotel91/unraid-templates/main/templates/icons/woodpeckerci-server.png</Icon>
+  <ExtraParams>--restart=unless-stopped</ExtraParams>
+  <Requires>
+    PostgreSQL 15
+    This container requires an external application to be run separately.
+  </Requires>
+  <Config Name="Server Insecure Cookie" Target="SERVER_INSECURE_COOKIE" Default="true" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="Postgres DB URL" Target="DATABASE_URL" Default="postgres://postgres:postgres@postgres:5432/postgres" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="Web UI" Target="8000" Default="8000" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="Data Dir" Target="/data" Default="/mnt/user/appdata/ryot" Mode="rw" Description="" Type="Path" Display="advanced" Required="true" Mask="false"></Config>
+</Container>
