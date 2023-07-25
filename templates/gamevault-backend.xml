@@ -7,9 +7,9 @@
   <Privileged>false</Privileged>
   <Support>https://github.com/bravohotel91/unraid-templates/issues/new/choose</Support>
   <Project>https://github.com/Phalcode/gamevault-backend</Project>
-  <Overview>GameVault (formerly known as "Crackpipe") is an innovative gaming platform providing a self-hosted, source-available alternative to popular gaming platforms. It allows you and your friends to enjoy playing and organizing games stored on your own file server.</Overview>
+  <Overview>GameVault is an innovative gaming platform providing a self-hosted, source-available alternative to popular gaming platforms. It allows you and your friends to enjoy playing and organizing games stored on your own file server.</Overview>
   <Category>Productivity: Tools:</Category>
-  <WebUI>http://[IP]:[PORT:8080]</WebUI>
+  <WebUI>http://[IP]:[PORT:8080]/api/docs</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/bravohotel91/unraid-templates/main/templates/gamevault-backend.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/bravohotel91/unraid-templates/main/templates/icons/gamevault-backend.png</Icon>
   <ExtraParams>--restart=unless-stopped</ExtraParams>
@@ -17,13 +17,13 @@
     PostgreSQL 15
     This container requires an external application to be run separately.
   </Requires>
-  <Config Name="Postgres Host" Target="DB_HOST" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="Postgres DB Host" Target="DB_HOST" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="Postgres DB Port" Target="DB_PORT" Default="5432" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false"/>
   <Config Name="Postgres DB User" Target="DB_USERNAME" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false"/>
   <Config Name="Postgres DB Password" Target="DB_PASSWORD" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="true"/>
   <Config Name="Server Admin Username" Target="SERVER_ADMIN_USERNAME" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false"/>
-  <Config Name="Server Admin Password" Target="SERVER_ADMIN_PASSWORD" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="true"/>
-  <Config Name="Web UI" Target="8080" Default="8080" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false"></Config>
-  <Config Name="Data Dir" Target="/data" Default="/mnt/user/appdata/gamevault-backend" Mode="rw" Description="" Type="Path" Display="advanced" Required="true" Mask="false"></Config>
-  <Config Name="Files Dir" Target="/files" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false"></Config>
-  <Config Name="Images Dir" Target="/images" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="Server Port" Target="8080" Default="8080" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="Files Directory" Target="/files" Default="" Mode="rw" Description="Where your game files are" Type="Path" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="Images Directory" Target="/images" Default="" Mode="rw" Description="Where your Images will land in" Type="Path" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="Data Directory" Target="/data" Default="/mnt/user/appdata/gamevault-backend" Mode="rw" Description="" Type="Path" Display="advanced" Required="true" Mask="false"></Config>
 </Container>
