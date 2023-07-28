@@ -10,7 +10,7 @@
   <Category>Productivity: Tools:</Category>
   <WebUI>http://[IP]:[PORT:3210]</WebUI>
   <TemplateURL>https://github.com/bravohotel91/unraid-templates/templates/plex-shuffler.xml</TemplateURL>
-  <Icon>https://github.com/bravohotel91/unraid-templates/templates/icons/plex-shuffler.png</Icon>
+  <Icon>https://raw.githubusercontent.com/bravohotel91/unraid-templates/main/templates/icons/plex-shuffler.png</Icon>
   <ExtraParams/>
   <Description>Plex Shuffler is a free and open source software application for creating shuffled playlists on Plex. It integrates with Plex and allows the user to shuffle different TV shows but keep a single TV show's episodes in order. The idea is to create a TV channel-like experience by shuffling your favorite TV shows.</Description>
   <Config Name="Web UI Port" Target="3210" Default="3210" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false"></Config>
