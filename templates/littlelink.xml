@@ -10,7 +10,7 @@
   <Category>Backup: Cloud: Productivity: Tools:</Category>
   <WebUI>http://[IP]:[PORT:80]</WebUI>
   <TemplateURL>https://github.com/bravohotel91/unraid-templates/templates/littlelink.xml</TemplateURL>
-  <Icon>https://raw.githubusercontent.com/bravohotel91/unraid-templates/8614389a3184c25eb15119860ea43db3124e171a/templates/icons/gitea.png</Icon>
+  <Icon>https://raw.githubusercontent.com/bravohotel91/unraid-templates/main/templates/icons/littelink.png</Icon>
   <ExtraParams/>
   <Description>A lightweight DIY alternative to services like Linktree.</Description>
   <Config Name="WebUI" Target="80" Default="80" Mode="tcp" Description="Container Port: 80" Type="Port" Display="always" Required="true" Mask="false">80</Config>
