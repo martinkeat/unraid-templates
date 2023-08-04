@@ -10,7 +10,7 @@
   <Category>Productivity: Tools:</Category>
   <WebUI>http://[IP]:[PORT:80]</WebUI>
   <TemplateURL>https://github.com/bravohotel91/unraid-templates/templates/littlelink.xml</TemplateURL>
-  <Icon>https://raw.githubusercontent.com/bravohotel91/unraid-templates/main/templates/icons/littelink.png</Icon>
+  <Icon>https://raw.githubusercontent.com/bravohotel91/unraid-templates/main/templates/icons/cosmos-server.png</Icon>
   <ExtraParams/>
   <Description></Description>
   <Config Name="WebUI - HTTP" Target="80" Default="80" Mode="tcp" Description="Container Port: 80" Type="Port" Display="always" Required="true" Mask="false">80</Config>
