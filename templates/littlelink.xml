@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>littlelink</Name>
+  <Repository>davisdre/littlelink</Repository>
+  <Registry>https://hub.docker.com/r/davisdre/littlelink</Registry>
+  <Network>bridge</Network>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/bravohotel91/unraid-templates/issues/new/choose</Support>
+  <Overview>Gitea: Git with a cup of tea - The goal of this project is to make the easiest, fastest, and most painless way of setting up a self-hosted Git service. Using Go, this can be done with an independent binary distribution across all platforms which Go supports, including Linux, macOS, and Windows on x86, amd64, ARM and PowerPC architectures. Want to try it before doing anything else? Do it with the online demo! This project has been forked from Gogs.</Overview>
+  <Category>Backup: Cloud: Productivity: Tools:</Category>
+  <WebUI>http://[IP]:[PORT:80]</WebUI>
+  <TemplateURL>https://github.com/bravohotel91/unraid-templates/templates/littlelink.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/bravohotel91/unraid-templates/8614389a3184c25eb15119860ea43db3124e171a/templates/icons/gitea.png</Icon>
+  <ExtraParams/>
+  <Description>A lightweight DIY alternative to services like Linktree.</Description>
+  <Config Name="WebUI" Target="80" Default="80" Mode="tcp" Description="Container Port: 80" Type="Port" Display="always" Required="true" Mask="false">80</Config>
+  <Config Name="Data Storage Path" Target="/data" Default="/mnt/user/appdata/littlelink" Mode="rw" Description="Container Path: /data" Type="Path" Display="advanced" Required="true" Mask="false">/mnt/user/appdata/littlelink</Config>
+</Container>
