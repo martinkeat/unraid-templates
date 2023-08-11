@@ -10,7 +10,7 @@
   <Overview>Reiverr is a clean combined interface for Jellyfin, TMDB, Radarr and Sonarr, as well as a replacement to Overseerr</Overview>
   <Category>Backup: Cloud: Productivity: Tools:</Category>
   <WebUI>http://[IP]:[PORT:9494]</WebUI>
-  <TemplateURL>https://github.com/bravohotel91/unraid-templates/templates/gitea.xml</TemplateURL>
+  <TemplateURL>https://github.com/bravohotel91/unraid-templates/templates/reiverr.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/bravohotel91/unraid-templates/3c8e57d779a975584f43f2a726bb861f2d34597a/templates/icons/reiverr.png</Icon>
   <ExtraParams/>
   <Description>Reiverr is a project that aims to create a single UI for interacting with TMDB, Jellyfin, Radarr and Sonarr, as well as be an alternative to Overseerr.</Description>
