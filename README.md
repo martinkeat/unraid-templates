@@ -12,7 +12,7 @@
     <a href="https://www.paypal.me/bhous1"><img src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" alt="paypal">
     </a>
     <a href="https://www.paypal.me/bhous1">
-      <img src="https://raw.githubusercontent.com/andreostrovsky/donate-with-paypal/925c5a9e/PNG/blue.png" alt="paypal">
+      <img src="https://raw.githubusercontent.com/andreostrovsky/donate-with-paypal/925c5a9e/PNG/blue.png" alt="paypal" height="41" width="174">
     </a>
 </div>
 
