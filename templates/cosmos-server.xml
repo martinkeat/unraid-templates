@@ -5,12 +5,12 @@
   <Registry>https://hub.docker.com/r/azukaar/cosmos-server</Registry>
   <Network>bridge</Network>
   <Privileged>false</Privileged>
-  <Support>https://github.com/bravohotel91/unraid-templates/issues/new/choose</Support>
+  <Support>https://github.com/Homelabbers/unraid-templates/issues/new?assignees=&labels=Template+Request&projects=&template=template-request.md&title=Community+Application+Template+Request+-+%3Capplication+name%3E</Support>
   <Overview>Secure and Easy Self-hosted platform. Take control of your data and privacy without sacrificing security and stability.</Overview>
   <Category>Productivity: Tools:</Category>
   <WebUI>http://[IP]:[PORT:80]</WebUI>
-  <TemplateURL>https://github.com/bravohotel91/unraid-templates/templates/littlelink.xml</TemplateURL>
-  <Icon>https://raw.githubusercontent.com/bravohotel91/unraid-templates/main/templates/icons/cosmos-server.png</Icon>
+  <TemplateURL>https://raw.githubusercontent.com/Homelabbers/unraid-templates/main/templates/cosmos-server.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/Homelabbers/unraid-templates/03dfaf6d2a7c055574920115d1fdb6c2a860bb28/templates/icons/cosmos-server.png</Icon>
   <ExtraParams/>
   <Description></Description>
   <Config Name="WebUI - HTTP" Target="80" Default="80" Mode="tcp" Description="Container Port: 80" Type="Port" Display="always" Required="true" Mask="false">80</Config>

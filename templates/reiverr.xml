@@ -5,13 +5,13 @@
   <Registry>https://github.com/aleksilassila/reiverr/pkgs/container/reiverr</Registry>
   <Network>bridge</Network>
   <Privileged>false</Privileged>
-  <Support>https://github.com/bravohotel91/unraid-templates/issues/new/choose</Support>
+  <Support>https://github.com/Homelabbers/unraid-templates/issues/new?assignees=&labels=Template+Request&projects=&template=template-request.md&title=Community+Application+Template+Request+-+%3Capplication+name%3E</Support>
   <Project> https://github.com/aleksilassila/reiverr</Project>
   <Overview>Reiverr is a clean combined interface for Jellyfin, TMDB, Radarr and Sonarr, as well as a replacement to Overseerr</Overview>
   <Category>Backup: Cloud: Productivity: Tools:</Category>
   <WebUI>http://[IP]:[PORT:9494]</WebUI>
-  <TemplateURL>https://github.com/bravohotel91/unraid-templates/templates/reiverr.xml</TemplateURL>
-  <Icon>https://raw.githubusercontent.com/bravohotel91/unraid-templates/3c8e57d779a975584f43f2a726bb861f2d34597a/templates/icons/reiverr.png</Icon>
+  <TemplateURL>https://raw.githubusercontent.com/Homelabbers/unraid-templates/main/templates/reiverr.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/Homelabbers/unraid-templates/bf9296f4bbccac842dd25eaba2d7adf02660e319/templates/icons/reiverr.png</Icon>
   <ExtraParams/>
   <Description>Reiverr is a project that aims to create a single UI for interacting with TMDB, Jellyfin, Radarr and Sonarr, as well as be an alternative to Overseerr.</Description>
   <Config Name="WebUI" Target="9494" Default="9494" Mode="tcp" Description="Container Port: 9494" Type="Port" Display="always" Required="true" Mask="false"/>

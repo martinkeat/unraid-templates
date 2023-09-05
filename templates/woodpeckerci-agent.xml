@@ -5,7 +5,7 @@
   <Registry>https://hub.docker.com/r/woodpeckerci/woodpecker-agent/</Registry>
   <Network>bridge</Network>
   <Privileged>false</Privileged>
-  <Support>https://woodpecker-ci.org/docs/intro</Support>
+  <Support>https://github.com/Homelabbers/unraid-templates/issues/new?assignees=&labels=Template+Request&projects=&template=template-request.md&title=Community+Application+Template+Request+-+%3Capplication+name%3E</Support>
   <Project>https://github.com/woodpecker-ci/woodpecker</Project>
   <Overview>Woodpecker is a simple CI engine with great extensibility.&#xD;
   &#xD;
@@ -14,8 +14,8 @@
   Modify per your requirements</Overview>
   <Category>Productivity: Tools:</Category>
   <WebUI>http://[IP]:[PORT:8000]</WebUI>
-  <TemplateURL>https://raw.githubusercontent.com/bravohotel91/unraid-templates/main/templates/woodpeckerci-agent.xml</TemplateURL>
-  <Icon>https://raw.githubusercontent.com/bravohotel91/unraid-templates/main/templates/icons/woodpeckerci-agent.png</Icon>
+  <TemplateURL>https://raw.githubusercontent.com/Homelabbers/unraid-templates/main/templates/woodpeckerci-agent.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/Homelabbers/unraid-templates/ef509cf38a5446471e9305abaa3d954694258880/templates/icons/woodpeckerci-agent.png</Icon>
   <ExtraParams>--restart=unless-stopped</ExtraParams>
   <Config Name="Woodpecker Server" Target="WOODPECKER_SERVER" Default="woodpecker-server:9000" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false"/>
   <Config Name="Woodpecker Agent Shared Secret" Target="WOODPECKER_AGENT_SECRET" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"></Config>

@@ -5,7 +5,7 @@
   <Registry>https://hub.docker.com/r/woodpeckerci/woodpecker-server/</Registry>
   <Network>bridge</Network>
   <Privileged>false</Privileged>
-  <Support>https://github.com/bravohotel91/unraid-templates/issues/new/choose</Support>
+  <Support>https://github.com/Homelabbers/unraid-templates/issues/new?assignees=&labels=Template+Request&projects=&template=template-request.md&title=Community+Application+Template+Request+-+%3Capplication+name%3E</Support>
   <Project>https://github.com/woodpecker-ci/woodpecker</Project>
   <Overview>Woodpecker is a simple CI engine with great extensibility.&#xD;
   &#xD;
@@ -14,8 +14,8 @@
   Modify per your requirements</Overview>
   <Category>Productivity: Tools:</Category>
   <WebUI>http://[IP]:[PORT:8000]</WebUI>
-  <TemplateURL>https://raw.githubusercontent.com/bravohotel91/unraid-templates/main/templates/woodpeckerci-server.xml</TemplateURL>
-  <Icon>https://raw.githubusercontent.com/bravohotel91/unraid-templates/main/templates/icons/woodpeckerci-server.png</Icon>
+  <TemplateURL>https://raw.githubusercontent.com/Homelabbers/unraid-templates/main/templates/woodpeckerci-server.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/Homelabbers/unraid-templates/ef509cf38a5446471e9305abaa3d954694258880/templates/icons/woodpeckerci-server.png</Icon>
   <ExtraParams>--restart=unless-stopped</ExtraParams>
   <Config Name="Host" Target="WOODPECKER_HOST" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false"/>
   <Config Name="Web UI" Target="8000" Default="8000" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false"></Config>

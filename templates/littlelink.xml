@@ -5,12 +5,12 @@
   <Registry>https://hub.docker.com/r/davisdre/littlelink</Registry>
   <Network>bridge</Network>
   <Privileged>false</Privileged>
-  <Support>https://github.com/bravohotel91/unraid-templates/issues/new/choose</Support>
+  <Support>https://github.com/Homelabbers/unraid-templates/issues/new?assignees=&labels=Template+Request&projects=&template=template-request.md&title=Community+Application+Template+Request+-+%3Capplication+name%3E</Support>
   <Overview>A lightweight DIY alternative to services like Linktree.</Overview>
   <Category>Backup: Cloud: Productivity: Tools:</Category>
   <WebUI>http://[IP]:[PORT:80]</WebUI>
-  <TemplateURL>https://github.com/bravohotel91/unraid-templates/templates/littlelink.xml</TemplateURL>
-  <Icon>https://raw.githubusercontent.com/bravohotel91/unraid-templates/main/templates/icons/littelink.png</Icon>
+  <TemplateURL>https://raw.githubusercontent.com/Homelabbers/unraid-templates/main/templates/littlelink.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/Homelabbers/unraid-templates/3256c19434e0651fe9f12e81b4b30ede2e4ace08/templates/icons/littlelink.png</Icon>
   <ExtraParams/>
   <Description></Description>
   <Config Name="WebUI" Target="80" Default="80" Mode="tcp" Description="Container Port: 80" Type="Port" Display="always" Required="true" Mask="false">80</Config>
