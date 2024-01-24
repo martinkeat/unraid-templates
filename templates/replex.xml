@@ -11,7 +11,7 @@
   <Category>Media Applications: Productivity: Tools:</Category>
   <WebUI>http://[IP]:[PORT:80]</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/Homelabbers/unraid-templates/main/templates/replex.xml</TemplateURL>
-  <Icon>https://avatars.githubusercontent.com/u/168401?s=48&v=4</Icon>
+  <Icon>https://avatars.githubusercontent.com/u/168401?s=48&amp;v=4</Icon>
   <ExtraParams/>
   <Description>Reiverr is a project that aims to create a single UI for interacting with TMDB, Jellyfin, Radarr and Sonarr, as well as be an alternative to Overseerr.</Description>
   <Config Name="WebUI" Target="80" Default="80" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false"/>
