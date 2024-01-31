@@ -16,8 +16,8 @@ You will need to create a config.yaml file and place in the addarr appdata folde
 &#xD;
 </Overview>
   <Category>Productivity: </Category>
-  <TemplateURL></TemplateURL>
-  <Icon></Icon>
+  <TemplateURL>https://raw.githubusercontent.com/Homelabbers/unraid-templates/main/templates/addarr.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/Homelabbers/unraid-templates/main/templates/icons/addarr.xml</Icon>
   <DonateText/>
   <DonateLink/>
   <Config Name="Config" Target="/app/config.yaml" Default="/mnt/user/appdata/addarr/config.yaml" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/addarr/config.yaml</Config>
