@@ -10,8 +10,5 @@
 
 <div>
     <a href="https://www.buymeacoffee.com/bravohotel" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174"></a>
-    <a href="https://www.paypal.me/bhous1">
-      <img src="https://raw.githubusercontent.com/andreostrovsky/donate-with-paypal/925c5a9e/PNG/blue.png" alt="paypal" height="41" width="174">
-    </a>
    <a href='https://ko-fi.com/Z8Z3U1RDJ' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://storage.ko-fi.com/cdn/kofi3.png?v=3' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>
 </div>
