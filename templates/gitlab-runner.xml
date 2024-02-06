@@ -11,7 +11,7 @@
   <Overview>GitLab Runner is the open source project that is used to run your CI/CD jobs and send the results back to GitLab</Overview>
   <Category>Productivity: </Category>
   <TemplateURL>https://raw.githubusercontent.com/Homelabbers/unraid-templates/main/templates/gitlab-runner.xml</TemplateURL>
-  <Icon>https://raw.githubusercontent.com/Homelabbers/unraid-templates/main/templates/icons/gitlab-runner.xml</Icon>
+  <Icon>https://raw.githubusercontent.com/Homelabbers/unraid-templates/main/templates/icons/gitlab-runner.png</Icon>
   <DonateText>If you appreciate the work we do, please donate to keep us going.</DonateText>
   <DonateLink>https://www.buymeacoffee.com/bravohotel</DonateLink>
   <Config Name="Config" Target="/etc/gitlab-runner" Default="/mnt/user/appdata/gitlab-runner" Mode="rw" Description="Config Location" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/gitlab-runner</Config>
