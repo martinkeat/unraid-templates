@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>ipfspodcast-node</Name>
+  <Repository>ghcr.io/bravohotel91/ipfspodcastnode:latest</Repository>
+  <Registry>https://github.com/bravohotel91/ipfspodcastnode/pkgs/container/ipfspodcastnode</Registry>
+  <Network>bridge</Network>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/Homelabbers/unraid-templates/issues/new/choose</Support>
+  <Project>https://github.com/bravohotel91/ipfspodcastnode</Project>
+  <Overview>IPFS Podcast Node for IPFSPodcasting.net</Overview>
+  <Description>You will need to add your email to the node to register it.</Description>
+  <Category>Productivity: </Category>
+  <WebUI>http://[IP]:[PORT:8675]</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/Homelabbers/unraid-templates/main/templates/ipfspodcasting-node.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/Homelabbers/unraid-templates/main/templates/icons/ipfspodcasting-node.png</Icon>
+  <DonateText>If you appreciate the work we do, please donate to keep us going.</DonateText>
+  <DonateLink>https://www.buymeacoffee.com/bravohotel</DonateLink>
+  <Config Name="IPFS" Target="/ipfs-podcasting/ipfs" Default="/mnt/user/appdata/ipfspodcastnode/ipfs" Mode="rw" Description="IPFS Data Location" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/ipfspodcastnode/ipfs</Config>
+  <Config Name="Config" Target="/ipfs-podcasting/cfg" Default="/mnt/user/appdata/ipfspodcastnode/cfg" Mode="rw" Description="Config Location" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/ipfspodcastnode/cfg</Config>
+  <Config Name="IPFS Port" Target="4001" Default="4001" Mode="" Description="" Type="Port" Display="always" Required="true" Mask="false">4001</Config>
+  <Config Name="Web UI Port" Target="8675" Default="8675" Mode="" Description="" Type="Port" Display="always" Required="true" Mask="false">8675</Config>
+</Container>
