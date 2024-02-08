@@ -8,8 +8,10 @@
   <Privileged>false</Privileged>
   <Support>https://github.com/Homelabbers/unraid-templates/issues/new/choose</Support>
   <Project>https://github.com/bravohotel91/ipfspodcastnode</Project>
-  <Overview>IPFS Podcast Node for IPFSPodcasting.net</Overview>
-  <Description>You will need to add your email to the node to register it.</Description>
+  <Overview>IPFS Podcast Node for IPFSPodcasting.net&#xD;
+  &#xD;
+  After the container starts, you will need to add your email to the node to register it with ipfspodcasting.net from within the Web UI.&#xD;
+  &#xD;</Overview>
   <Category>Productivity: </Category>
   <WebUI>http://[IP]:[PORT:8675]</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/Homelabbers/unraid-templates/main/templates/ipfspodcasting-node.xml</TemplateURL>
