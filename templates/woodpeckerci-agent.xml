@@ -13,7 +13,6 @@
   &#xD;
   Modify per your requirements</Overview>
   <Category>Productivity: Tools:</Category>
-  <WebUI>http://[IP]:[PORT:8000]</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/Homelabbers/unraid-templates/main/templates/woodpeckerci-agent.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/Homelabbers/unraid-templates/ef509cf38a5446471e9305abaa3d954694258880/templates/icons/woodpeckerci-agent.png</Icon>
   <ExtraParams>--restart=unless-stopped</ExtraParams>
