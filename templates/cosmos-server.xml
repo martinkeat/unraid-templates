@@ -3,19 +3,19 @@
   <Name>cosmos-server</Name>
   <Repository>azukaar/cosmos-server</Repository>
   <Registry>https://hub.docker.com/r/azukaar/cosmos-server</Registry>
-  <Network>bridge</Network>
-  <Privileged>false</Privileged>
+  <Network>host</Network>
+  <Privileged>true</Privileged>
   <Support>https://github.com/Homelabbers/unraid-templates/issues/new?assignees=&amp;labels=Template+Request&amp;projects=&amp;template=template-request.md&amp;title=Community+Application+Template+Request+-+%3Capplication+name%3E</Support>
   <Overview>Secure and Easy Self-hosted platform. Take control of your data and privacy without sacrificing security and stability.</Overview>
   <Category>Productivity: Tools:</Category>
   <WebUI>http://[IP]:[PORT:80]</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/Homelabbers/unraid-templates/main/templates/cosmos-server.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/Homelabbers/unraid-templates/03dfaf6d2a7c055574920115d1fdb6c2a860bb28/templates/icons/cosmos-server.png</Icon>
-  <ExtraParams/>
+  <ExtraParams>--network=host --hostname=cosmos-server --restart=always</ExtraParams>
   <Description></Description>
-  <Config Name="WebUI - HTTP" Target="80" Default="80" Mode="tcp" Description="Container Port: 80" Type="Port" Display="always" Required="true" Mask="false">80</Config>
-  <Config Name="WebUI - HTTPS" Target="443" Default="443" Mode="tcp" Description="Container Port: 443" Type="Port" Display="always" Required="true" Mask="false">443</Config>
-  <Config Name="Host Path" Target="/mnt/host" Default="/mnt/user/appdata/cosmos-server" Mode="rw" Description="Container Path: /mnt/host" Type="Path" Display="advanced" Required="true" Mask="false"></Config>
-  <Config Name="Config" Target="/config" Default="/mnt/user/appdata/cosmos-server/" Mode="rw" Description="Container Path: /config" Type="Path" Display="advanced" Required="true" Mask="false"></Config>
-  <Config Name="Docker Socket" Target="/var/run/docker.sock" Default="/var/run/docker.sock" Mode="rw" Description="Docker Socket Connection" Type="Path" Display="advanced" Required="true" Mask="false"></Config>
+  <Config Name="WebUI - HTTP" Target="80" Default="80" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">80</Config>
+  <Config Name="WebUI - HTTPS" Target="443" Default="443" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">443</Config>
+  <Config Name="Host Path" Target="/mnt/host" Default="/mnt/user/appdata/cosmos-server" Mode="rw" Description="" Type="Path" Display="advanced" Required="true" Mask="false">/mnt/user/cosmos/</Config>
+  <Config Name="Config" Target="/config" Default="/mnt/user/appdata/cosmos-server" Mode="rw" Description="" Type="Path" Display="advanced" Required="true" Mask="false">/mnt/user/appdata/cosmos-server/</Config>
+  <Config Name="Docker Socket" Target="/var/run/docker.sock" Default="/var/run/docker.sock" Mode="rw" Description="Docker Socket Connection" Type="Path" Display="advanced" Required="true" Mask="false">/var/run/docker.sock</Config>
 </Container>
