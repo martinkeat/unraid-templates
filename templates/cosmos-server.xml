@@ -15,7 +15,7 @@
   <Description></Description>
   <Config Name="WebUI - HTTP" Target="80" Default="80" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">80</Config>
   <Config Name="WebUI - HTTPS" Target="443" Default="443" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">443</Config>
-  <Config Name="Host Path" Target="/mnt/host" Default="/mnt/user/appdata/cosmos-server" Mode="rw" Description="" Type="Path" Display="advanced" Required="true" Mask="false">/mnt/user/cosmos/</Config>
-  <Config Name="Config" Target="/config" Default="/mnt/user/appdata/cosmos-server" Mode="rw" Description="" Type="Path" Display="advanced" Required="true" Mask="false">/mnt/user/appdata/cosmos-server/</Config>
+  <Config Name="Host Path" Target="/mnt/host" Default="/mnt/user/cosmos/" Mode="rw" Description="" Type="Path" Display="advanced" Required="true" Mask="false">/mnt/user/cosmos/</Config>
+  <Config Name="Config" Target="/config" Default="/mnt/user/appdata/cosmos-server/" Mode="rw" Description="" Type="Path" Display="advanced" Required="true" Mask="false">/mnt/user/appdata/cosmos-server/</Config>
   <Config Name="Docker Socket" Target="/var/run/docker.sock" Default="/var/run/docker.sock" Mode="rw" Description="Docker Socket Connection" Type="Path" Display="advanced" Required="true" Mask="false">/var/run/docker.sock</Config>
 </Container>
